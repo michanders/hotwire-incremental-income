@@ -23,3 +23,8 @@ function formAutoSubmit(){
 window.onkeyup = function(){
 	window.setTimeout(formAutoSubmit, 1000);
 };
+
+window.onchange = function(){
+	window.setTimeout(formAutoSubmit, 1000);
+};
+
