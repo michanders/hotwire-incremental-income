@@ -1,0 +1,28 @@
+<header>
+	<img src="/images/hotwirelogo.png" id='logo'>
+</header>
+<br><br><br><br>
+<div>
+	<h1>
+		<form id='room' action='/emptyrooms'>
+			This year, my
+			<select id="star" name="starselect">
+				<option value="71" <%=@star==="71" ? selected="selected" : nil%>>2 - 2.5 star</option>
+				<option value="100" <%=@star==="100" ? selected="selected" : nil%>>3 - 3.5 star</option>
+				<option value="142" <%=@star==="142" ? selected="selected" : nil%>>4 - 4.5 star</option>
+			</select>
+			hotel had 
+			<input type='text' name="roomnum" id="roominput" autocomplete="off" value="<%= @room unless nil%>">
+		</form>
+		empty rooms.
+		<br><br>
+		If I sold these on Hotwire, I could have realized $<%= number_with_delimiter(@value, :delimiter => ',') %>* incremental revenue.
+		<br><br>
+	</h1>
+</div>
+<footer>
+	<p>
+		*Estimate based on 2018 ADR averages in USD. Suggested rate depends on market, recommend score, season, and more.<br>
+		Please contact your Hotwire Hotel Account Manager to optimize your rate strategy.
+	</p>
+</footer>
