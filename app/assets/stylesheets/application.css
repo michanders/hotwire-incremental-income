@@ -62,17 +62,23 @@ p {
 	width: 95px;
 }
 
+#foot {
+	margin: auto;
+	width: 70%;
+}
+
 footer {
-	position: absolute;
+	position: fixed;
 	background-color: #dd323b;
 	width: 100%;
 	margin: auto;
-	bottom: 0px;
+	bottom: 0%;
 }
 
 @media only screen and (max-device-width: 1500px) {
 
 	#logo {
+	position: absolute;
 	padding-top: 15px;
 	width: 500px;
 	}
@@ -83,27 +89,27 @@ footer {
 	}
 
 	#room input, #star {
-	width: 150px;
+	width: 100px;
 	height: 50px;
 	font-size: 40px;
 	}
 
 	#star {
-	width: 235px;
+	width: 260px;
 	height: 60px;
+	}
+	
+	#foot {
+	width: 100%;
 	}
 
 	footer {
-	position: absolute;
-	background-color: #dd323b;
 	width: 100%;
 	height: 100px;
-	margin: auto;
-	bottom: 0%;
 	}
 
 	p {
-	padding-top: 15px;
-	font-size: 18px
+	padding-top: 5px;
+	font-size: 23px
 	}
 }
