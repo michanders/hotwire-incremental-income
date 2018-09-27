@@ -25,6 +25,6 @@ window.onkeyup = function(){
 };
 
 window.onchange = function(){
-	window.setTimeout(formAutoSubmit, 1000);
+	window.setTimeout(formAutoSubmit, 200);
 };
 
