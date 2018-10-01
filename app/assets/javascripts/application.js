@@ -23,12 +23,12 @@ function formAutoSubmit(){
 
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)){
 	window.onchange = function(){
-		formAutoSubmit;
+		window.setTimeout(formAutoSubmit, 50);
 	};
 }
 else{
 	window.onchange = function(){
-		formAutoSubmit;
+		window.setTimeout(formAutoSubmit, 50);
 	};
 	window.oninput = function(){
 		window.setTimeout(formAutoSubmit, 1500);
