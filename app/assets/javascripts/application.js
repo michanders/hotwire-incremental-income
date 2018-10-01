@@ -20,17 +20,18 @@ function formAutoSubmit(){
 	$("#star option:last").attr("selected", "selected");
 }
 
+
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)){
 	window.onchange = function(){
-		window.setTimeout(formAutoSubmit, 200);
+		formAutoSubmit;
 	};
 }
 else{
 	window.onchange = function(){
-		window.setTimeout(formAutoSubmit, 200);
+		formAutoSubmit;
 	};
-	window.onkeyup = function(){
-		window.setTimeout(formAutoSubmit, 1000);
+	window.oninput = function(){
+		window.setTimeout(formAutoSubmit, 1500);
 	};
 };
 

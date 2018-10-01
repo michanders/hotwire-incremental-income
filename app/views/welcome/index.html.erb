@@ -1,7 +1,7 @@
 <header>
 	<img src="/images/hotwirelogo.png" id='logo'>
 </header>
-<br><br><br><br>
+<br><h2>Missed Net Revenue Estimator</h2><br><br>
 <div>
 	<h1>
 		<form id='room' action='/emptyrooms'>
@@ -12,7 +12,7 @@
 				<option value="122" <%=@star==="122" ? selected="selected" : nil%>>4 - 4.5 star</option>
 			</select>
 			hotel had 
-			<input type='text' name="roomnum" id="roominput" autocomplete="off" value="<%= @room unless nil%>">
+			<input type='number' name="roomnum" id="roominput" autocomplete="off" value="<%= @room unless nil%>">
 		</form>
 		empty rooms.
 		<br><br>
