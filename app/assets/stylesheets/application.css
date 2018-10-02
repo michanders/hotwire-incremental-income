@@ -40,8 +40,7 @@ h1 {
 
 h2 {
 	display: inline;
-	font-size: 35px;
-	text-decoration: underline;
+	font-size: 45px;
 }
 
 p {
@@ -99,7 +98,7 @@ footer {
 	}
 
 	h2 {
-	font-size: 55px;
+	font-size: 60px;
 	display: inline-block;
 	}
 
