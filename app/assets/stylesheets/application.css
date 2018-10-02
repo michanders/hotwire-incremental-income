@@ -86,7 +86,7 @@ footer {
 	bottom: 0%;
 }
 
-@media only screen and (max-device-width: 1500px) {
+@media only Screen and (max-device-width: 1500px) {
 
 	#logo {
 	position: absolute;
